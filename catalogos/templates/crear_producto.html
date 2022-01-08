@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block titulo %}
+    <title>Crear Productos</title>
+{% endblock%}
+
+{% block contenido %}
+    <h3 style="color: blue;">Registrando productos</h3>
+    <form action="" method='post'>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Crear</button>
+    </form>
+
+{% endblock%}
